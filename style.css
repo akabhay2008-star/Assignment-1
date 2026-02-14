@@ -7,11 +7,17 @@
 
 body {
   min-height: 100vh;
+  font-family: "MyFont";
   background: linear-gradient(
     to right,
     rgb(145, 180, 240),
     rgb(160, 220, 210)
   );
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("Montserrat-Regular.ttf") format("truetype");
 }
 
 header {
