@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(145, 180, 240),
+    rgb(160, 220, 210)
+  );
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: rgb(90, 100, 220);
+  margin-bottom: 10px;
+}
+
+.wide {
+  grid-column: span 1;
+}
+
+.full {
+  grid-column: span 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input, textarea, select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgb(210, 210, 210);
+}
+
+.primary-btn {
+  margin-top: 10px;
+  background: rgb(120, 110, 230);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: rgb(120, 110, 230);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: -webkit-fill-available;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.event-card {
+  background: rgb(245, 247, 255);
+  border-left: 4px solid rgb(120, 110, 230);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.empty {
+  color: gray;
+  font-size: 14px;
+}
+
+.dom-box {
+  background: rgb(245, 247, 255);
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 1px 1px 1px 1px ;
+}
+
+.key {
+  margin-top: 8px;
+  color: rgb(120, 110, 230);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .full {
+    grid-column: span 1;
+  }
+}
