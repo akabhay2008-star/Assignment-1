@@ -24,18 +24,18 @@ function addEventCard(title, date, category, description) {
   card.className = "event-card";
 
   card.innerHTML = `
-    <h3>${title}</h3>
-    <p><b>Date:</b> ${date}</p>
-    <p><b>Category:</b> ${category}</p>
-    <p>${description}</p>
-    <button class="delete">Delete</button>
-  `;
+  <h3>${title}</h3>
+  <p><b>Date:</b> ${date}</p>
+  <p><b>Category:</b> ${category}</p>
+  <p>${description}</p>
+  <button class="delete-btn" title="Delete Event">✕</button>
+`;
 
   eventContainer.appendChild(card);
 }
 
 eventContainer.addEventListener("click", function (e) {
-  if (e.target.classList.contains("delete")) {
+  if (e.target.classList.contains("delete-btn")) {
     e.target.parentElement.remove();
   }
 });
