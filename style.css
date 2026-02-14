@@ -148,6 +148,25 @@ input, textarea, select {
   color: rgb(120, 110, 230);
 }
 
+.primary-btn, .secondary-btn {
+  transition: all 0.25s ease;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  opacity: 0.95;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  transition: 0.3s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
